@@ -1,13 +1,18 @@
 document.addEventListener('DOMContentLoaded', () =>{
-    const del = document.querySelector('.actions__form-delete');
-    let itemToggle = document.querySelectorAll('.actions__item-toggle');
+    const del = document.querySelector('.actions__form-delete'),
+        actions = document.querySelector('.actions'),
+        actionsItemDescription = document.querySelectorAll('.actions__item-description'),
+        actionsItemHeader = document.querySelectorAll('.actions__item-header'),
+        actionsItemToggle = document.querySelectorAll('.actions__item-toggle');
 
-    itemToggle.forEach(item => {
-        item.addEventListener('click', ()=> {
-            const actionsItem = document.querySelector('.actions__item-description');
-            itemToggle.classList.toggle('open');
-            console.log(1)
-        })
+    actions.addEventListener('click', e => {
+    actionsItemDescription.forEach(item=> {
+        (item.closest('.actions__item') === e.target.closest('.actions__item')) ?
+            (item.classList.contains('desc-active')) ?
+                item.classList.remove('desc-active') :
+                item.classList.add('desc-active'):
+            item.classList.remove('desc-active');
+        });
     });
 
     del.addEventListener('click', () => {
@@ -15,3 +20,4 @@ document.addEventListener('DOMContentLoaded', () =>{
         input.value = '';
     })
 });
+ 
