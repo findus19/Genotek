@@ -1,5 +1,5 @@
 @font-face {
-    font-family: ALSStory;
+    font-family: ALS_Direct_Semi_Cond;
     src: url(/fonts/ALS_Direct_Semi_Cond.otf);
     
 }
@@ -73,7 +73,6 @@ body {
 } */
 
 .top__link {
-    font-family: ALSStory;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -85,7 +84,6 @@ body {
 
 .top__status,
 .top__access {
-    font-family: ALSStory;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -107,7 +105,6 @@ body {
 
 .title,
 .subtitle {
-    font-family: ALSStory;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -152,7 +149,6 @@ body {
 }
 
 .actions__item-title {
-    font-family: ALSStory;
     font-size: 22px;
     font-weight: normal;
     font-stretch: normal;
@@ -168,7 +164,6 @@ body {
     background-image: url(/img/arrow-down.svg);
     background-position: 50%;
     background-repeat: no-repeat;
-    /* margin-right: 45px; */
 }
 
 .actions__item.open .actions__item-toggle{
@@ -191,7 +186,7 @@ body {
 
 .actions__item-text {
     width: 693px;
-    font-family: ALSStory;
+    ;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -231,7 +226,7 @@ body {
 }
 
 .actions__form-input {
-    font-family: ALSStory;
+    width: 100%;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -247,6 +242,19 @@ body {
     border-bottom-color: #ffffff
 }
 
+.actions__form-input::placeholder {
+    
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: normal;
+    color: #fff
+}
+
+
+
 .actions__form-delete{
     position: absolute;
     width: 14px;
@@ -256,13 +264,12 @@ body {
     background-image: url(/img/delete.svg);
     background-position: 50%;
     background-repeat: no-repeat;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
 }
 
 .actions__form-submit {
     width: 214px;
     height: 50px;
-    font-family: ALSStory, sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-stretch: normal;

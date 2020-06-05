@@ -4,8 +4,14 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     itemToggle.forEach(item => {
         item.addEventListener('click', ()=> {
-            const actionsItem = document.querySelectorAll('.actions__item-description')[item];
-            actionsItem.classList.toggle('open');
+            const actionsItem = document.querySelector('.actions__item-description');
+            itemToggle.classList.toggle('open');
+            console.log(1)
         })
+    });
+
+    del.addEventListener('click', () => {
+        const input = document.querySelector('.actions__form-input');
+        input.value = '';
     })
 });
