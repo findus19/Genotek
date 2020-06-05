@@ -115,7 +115,6 @@ body {
 }
 
 .title{
-    /* padding: 15px 0 8px 0; */
     font-size: 30px;
     line-height: 30px;
     line-height: 1.27;
@@ -184,7 +183,6 @@ body {
     content: "";
     display: block;
     clear: both;
-    /* padding: 30px 0; */
 }
 
 .actions__item.open .actions__item-description {
@@ -201,13 +199,8 @@ body {
     line-height: 1.5;
     letter-spacing: normal;
     color: #ffffff;
-    /* margin-left: 45px;
-    float: left; */
-}
 
-/* .paragraph {
-    padding-bottom: 8px;
-} */
+}
 
 .actions__item-text a {
     color: #5a88c1;
@@ -221,7 +214,7 @@ body {
     text-decoration: none
 }
 
-.actions__item-img{
+.actions__item-image{
     width: 250px;
     height: 250px;
     border-radius: 50%;

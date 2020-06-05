@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     itemToggle.forEach(item => {
         item.addEventListener('click', ()=> {
-
-            const actionsItem = document.querySelector('.actions__item-description');
+            const actionsItem = document.querySelectorAll('.actions__item-description')[item];
             actionsItem.classList.toggle('open');
         })
     })
